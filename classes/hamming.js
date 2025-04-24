@@ -64,6 +64,37 @@ class HammingCode {
 
     return [dataToDecode[2], dataToDecode[4], dataToDecode[5], dataToDecode[6]];
   }
+  // NEW: Вводить одиничну помилку в код
+  static injectError(data, position) {
+    if (!Array.isArray(data) || data.length !== 7) {
+      throw Error("injectError: input must be 7-bit array");
+    }
+    if (position < 1 || position > 7) {
+      throw Error("injectError: position must be in range 1-7");
+    }
+
+    const corrupted = [...data];
+    corrupted[position - 1] = 1 - corrupted[position - 1];
+    return corrupted;
+  }
+
+  // NEW: Перевіряє правильність коду (чи є помилка)
+  static isValid(data) {
+    if (!Array.isArray(data) || data.length !== 7) {
+      throw Error("isValid: input must be 7-bit array");
+    }
+
+    const p1 = data[2] ^ data[4] ^ data[6];
+    const p2 = data[2] ^ data[5] ^ data[6];
+    const p3 = data[4] ^ data[5] ^ data[6];
+
+    let errorPosition = 0;
+    if (p1 !== data[0]) errorPosition += 1;
+    if (p2 !== data[1]) errorPosition += 2;
+    if (p3 !== data[3]) errorPosition += 4;
+
+    return errorPosition === 0;
+  }
 }
 
 module.exports = HammingCode;
