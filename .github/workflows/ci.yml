@@ -3,10 +3,10 @@ name: Run Tests
 on:
   push:
     branches:
-      - master  # Запускається при пуші в гілку master
+      - '*'  # Запускається при пуші в будь-яку гілку
   pull_request:
     branches:
-      - master  # Запускається при відкритті/оновленні pull request до гілки master
+      - '*'  # Запускається при відкритті/оновленні pull request до будь-якої гілки
 
 jobs:
   test:
@@ -25,4 +25,4 @@ jobs:
         run: npm install  # Встановлюємо всі залежності за допомогою npm
 
       - name: Run tests
-        run: npm test
+        run: npm test  # Запускаємо тести
