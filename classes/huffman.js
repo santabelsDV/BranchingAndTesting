@@ -49,27 +49,60 @@ class HuffmanCode {
 
 
     static buildCodeTable(huffmanTree, code = '', codeTable = {}) {
+        if (!huffmanTree) return codeTable;
+
         if (!huffmanTree.left && !huffmanTree.right) {
-            codeTable[huffmanTree.value] = code;
+            if (huffmanTree.value !== null) {
+                // Коли в дереві тільки один символ — даємо йому код '0'
+                const bit = code.length > 0 ? code : '0';
+                codeTable[huffmanTree.value] = bit;
+            }
             return codeTable;
         }
 
-        this.buildCodeTable(huffmanTree.left, code + '0', codeTable);
-        this.buildCodeTable(huffmanTree.right, code + '1', codeTable);
+        if (huffmanTree.left) {
+            this.buildCodeTable(huffmanTree.left, code + '0', codeTable);
+        }
+        if (huffmanTree.right) {
+            this.buildCodeTable(huffmanTree.right, code + '1', codeTable);
+        }
 
         return codeTable;
     }
 
+
     static compressData(data, codeTable) {
+        if (typeof data !== 'string' || data.length === 0) {
+            throw new Error('Invalid input data for compression');
+        }
+        if (typeof codeTable !== 'object' || codeTable === null) {
+            throw new Error('Invalid code table for compression');
+        }
+
         let compressedData = '';
         for (let i = 0; i < data.length; i++) {
             const symbol = data[i];
-            compressedData += codeTable[symbol];
+            const bits = codeTable[symbol];
+            if (typeof bits !== 'string') {
+                throw new Error(`No code for symbol "${symbol}"`);
+            }
+            compressedData += bits;
         }
         return compressedData;
     }
 
     static decompressData(compressedData, huffmanTree) {
+        if (typeof compressedData !== 'string' || compressedData.length === 0) {
+            throw new Error('Invalid compressed data for decompression');
+        }
+        if (!huffmanTree) {
+            throw new Error('Invalid Huffman tree for decompression');
+        }
+
+        if (!huffmanTree.left && !huffmanTree.right) {
+            return huffmanTree.value.repeat(compressedData.length);
+        }
+
         let decompressedData = '';
         let currentNode = huffmanTree;
 
@@ -77,16 +110,18 @@ class HuffmanCode {
             const bit = compressedData[i];
             if (bit === '0') {
                 currentNode = currentNode.left;
-            } else {
+            } else if (bit === '1') {
                 currentNode = currentNode.right;
+            } else {
+                throw new Error(`Invalid bit "${bit}" in compressed data`);
             }
 
+            // Якщо дійшли до листа — додаємо символ і повертаємося до кореня
             if (!currentNode.left && !currentNode.right) {
                 decompressedData += currentNode.value;
                 currentNode = huffmanTree;
             }
         }
-
         return decompressedData;
     }
 }
