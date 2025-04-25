@@ -125,5 +125,5 @@ class HuffmanCode {
         return decompressedData;
     }
 }
-
+/**/
 module.exports = HuffmanCode;
