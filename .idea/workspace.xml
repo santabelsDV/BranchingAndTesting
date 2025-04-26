@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d5fdcecd-ed24-4a39-a3d6-9695240629e1" name="Changes" comment="Малі правки" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="feature/xor-parity_МК" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/xor-parity_МК" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;santabelsDV&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/santabelsDV/BranchingAndTesting.git&quot;,
+    &quot;accountId&quot;: &quot;dfdc7f7b-771a-49fe-88c2-c39ea8d0168c&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2wDvz1z7e4FMVCw0ia4rZfj3nLO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Mocha.Hamming code testing (1).executor&quot;: &quot;Run&quot;,
+    &quot;Mocha.Hamming code testing.executor&quot;: &quot;Run&quot;,
+    &quot;Mocha.HammingCode.executor&quot;: &quot;Run&quot;,
+    &quot;Mocha.HammingCode.should decode many times quickly.executor&quot;: &quot;Run&quot;,
+    &quot;Mocha.HammingCode.should throw an error when decoding input is not 7 bits.executor&quot;: &quot;Run&quot;,
+    &quot;Mocha.HammingCode.should throw an error when encoding input contains NaN.executor&quot;: &quot;Run&quot;,
+    &quot;Mocha.Huffman code testing.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/xor-parity__МК&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/oleks/WebstormProjects/BranchingAndTestingFinal/.github&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.mocha.mocha_node_package_dir&quot;: &quot;C:/Users/oleks/WebstormProjects/BranchingAndTestingFinal/node_modules/mocha&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.test.executor&quot;: &quot;Run&quot;,
+    &quot;npm.test2.executor&quot;: &quot;Run&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oleks\WebstormProjects\BranchingAndTestingFinal\.github" />
+      <recent name="C:\Users\oleks\WebstormProjects\BranchingAndTestingFinal" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.test2">
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test2" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test2" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Hamming code testing" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/hammingTest.js</test-file>
+      <test-names>
+        <name value="Hamming code testing" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="HammingCode" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/test2.js</test-file>
+      <test-names>
+        <name value="HammingCode" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Huffman code testing" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/huffmanTest.js</test-file>
+      <test-names>
+        <name value="Huffman code testing" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.test2" />
+        <item itemvalue="npm.test" />
+        <item itemvalue="Mocha.Huffman code testing" />
+        <item itemvalue="Mocha.HammingCode" />
+        <item itemvalue="Mocha.Hamming code testing" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5fdcecd-ed24-4a39-a3d6-9695240629e1" name="Changes" comment="" />
+      <created>1745589217753</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745589217753</updated>
+      <workItem from="1745589218837" duration="71000" />
+      <workItem from="1745589301783" duration="17000" />
+      <workItem from="1745589326261" duration="5225000" />
+      <workItem from="1745655699645" duration="55000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: додано xorEncode та calculateParity з unit-тестами Sanches 21 minutes ago">
+      <option name="closed" value="true" />
+      <created>1745589465613</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745589465614</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: додано xorEncode та calculateParity з unit-тестами Sanches 21 minutes ago">
+      <option name="closed" value="true" />
+      <created>1745589762603</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745589762603</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Налаштував запуск тестів.">
+      <option name="closed" value="true" />
+      <created>1745592231169</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745592231169</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Налаштував запуск тестів.">
+      <option name="closed" value="true" />
+      <created>1745592515903</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745592515903</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Налаштував запуск тестів.">
+      <option name="closed" value="true" />
+      <created>1745592922557</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745592922557</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Малі правки">
+      <option name="closed" value="true" />
+      <created>1745655730296</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745655730296</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: додано xorEncode та calculateParity з unit-тестами Sanches 21 minutes ago" />
+    <MESSAGE value="Налаштував запуск тестів." />
+    <MESSAGE value="Малі правки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Малі правки" />
+  </component>
+</project>

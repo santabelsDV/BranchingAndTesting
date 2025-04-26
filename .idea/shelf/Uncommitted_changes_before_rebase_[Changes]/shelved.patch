@@ -1,0 +1,16 @@
+Index: index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>let hamming = require('./classes/hamming.js');\r\nlet huffman = require('./classes/huffman.js');\r\n\r\nmodule.exports = {huffman, hamming, };\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.js b/index.js
+--- a/index.js	(revision 92a030b8af98c8a9690ca74714965d1d5b9a6a3d)
++++ b/index.js	(date 1745589484403)
+@@ -1,4 +1,4 @@
+ let hamming = require('./classes/hamming.js');
+ let huffman = require('./classes/huffman.js');
+ 
+-module.exports = {huffman, hamming, };
++module.exports = {huffman, hamming};
