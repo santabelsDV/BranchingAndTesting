@@ -3,26 +3,26 @@ name: Run Tests
 on:
   push:
     branches:
-      - '*'  # Запускається при пуші в будь-яку гілку
+      - '*'
   pull_request:
     branches:
-      - '*'  # Запускається при відкритті/оновленні pull request до будь-якої гілки
+      - '*'
 
 jobs:
   test:
-    runs-on: ubuntu-latest  # Використовуємо останній образ Ubuntu для виконання
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2  # Крок для перевірки репозиторію
+        uses: actions/checkout@v2
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'  # Встановлюємо версію Node.js (можете змінити на ту, яка використовується у вашому проекті)
+          node-version: '14'
 
       - name: Install dependencies
-        run: npm install  # Встановлюємо всі залежності за допомогою npm
+        run: npm install
 
       - name: Run tests
-        run: npm test  # Запускаємо тести
+        run: npm test
